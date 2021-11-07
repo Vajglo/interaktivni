@@ -5,9 +5,9 @@ int main(void) {
 	int menu_q;
 
 	printf("Vyberte jednu moznost: \n");
-	printf("1. trojuhelnik\n"); 
-	printf("2. obdelnik\n"); 
-	printf("3. kruznice\n"); 
+	printf("1. trojuhelnik\n");
+	printf("2. obdelnik\n");
+	printf("3. kruznice\n");
 
 	scanf("%d", &menu_q);
 
@@ -22,7 +22,7 @@ int trojuhelnik(void) {
 	int existuje = 0;
 	float obsah;
 
-	
+
 	system("cls");
 
 	printf("Vlozet delku strany a v cm:\n");
@@ -40,36 +40,30 @@ int trojuhelnik(void) {
 
 	system("cls");
 
-	
 
-	
 	if ((a + b > c) && (a + c > b) && (b + c > a)) { existuje = 1; }
-	
 
-	
+
 	if (existuje == 1) {
-		
+
 		prepona = a; odves1 = b; odves2 = c;
 		if (b > prepona) { prepona = b; odves1 = a; odves2 = c; }
 		if (c > prepona) { prepona = c; odves1 = a; odves2 = b; }
 
-		
 
 		if (odves1 * odves1 + odves2 * odves2 == prepona * prepona) { pravouhly = 1; }
-		
 
-		
+
 		obvod = a + b + c;
-		
 
-		
+
 		float s = obvod / 2;
 		obsah = sqrt(s * (s - odves1) * (s - odves2) * (s - prepona));
-		
-	}
-	
 
-	
+	}
+
+
+
 	if (existuje != 1) {
 		printf("Trojuhelink neexistuje\n");
 	}
@@ -80,14 +74,14 @@ int trojuhelnik(void) {
 		printf("Obvod trojuhelniku je: %d\n", obvod);
 		printf("Obsah trojuhelniku je: %f\n", obsah);
 	}
-	
+
 }
 
 int obdelnik(void) {
 	int a, b, obvod, obsah;
 	int ctverec = 0;
 
-	
+
 	system("cls");
 
 	printf("Vlozet delku strany a v cm:\n");
@@ -99,53 +93,43 @@ int obdelnik(void) {
 	scanf("%d", &b);
 
 	system("cls");
-	
 
-	
+
 	if (a == b) { ctverec = 1; }
-	
 
-	
 	obvod = 2 * (a + b);
-	
 
-	
+
 	obsah = a * b;
-	
 
-	
+
 	if (ctverec == 1) { printf("Zadany obdelnik je ctverec\n"); }
 
 	printf("Obvod: %d\n", obvod);
 	printf("Obsah: %d\n", obsah);
-	
+
 
 	int kruznice(void); {
-		
-		
-		
-	int r;
-	float obvod, obsah;
 
-	
-	system("cls");
 
-	printf("Vlozet polomer kruznice v cm:\n");
-	scanf("%d", &r);
+		int r;
+		float obvod, obsah;
 
-	system("cls");
-	
 
-	
-	obvod = 2 * 3.14 * r;
-	
+		system("cls");
 
-	
-	obsah = 3.14 * r * r;
-	
+		printf("Vlozet polomer kruznice v cm:\n");
+		scanf("%d", &r);
 
-	
-	printf("Obvod: %f\n", obvod);
-	printf("Obsah: %f\n", obsah);
-	
-}
+		system("cls");
+
+		obvod = 2 * 3.14 * r;
+
+
+		obsah = 3.14 * r * r;
+
+
+		printf("Obvod: %f\n", obvod);
+		printf("Obsah: %f\n", obsah);
+
+	}
