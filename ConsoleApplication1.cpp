@@ -4,7 +4,7 @@
 int main(void) {
 	int menu_q;
 
-	printf("Vyberte jednu moznost: \n");
+	printf("Zvol se jednu moznost: \n");
 	printf("1. trojuhelnik\n");
 	printf("2. obdelnik\n");
 	printf("3. kruznice\n");
@@ -63,7 +63,6 @@ int trojuhelnik(void) {
 	}
 
 
-
 	if (existuje != 1) {
 		printf("Trojuhelink nelze sestrojit\n");
 	}
@@ -94,27 +93,21 @@ int obdelnik(void) {
 
 	system("cls");
 
-
 	if (a == b) { ctverec = 1; }
 
 	obvod = 2 * (a + b);
 
-
 	obsah = a * b;
-
 
 	if (ctverec == 1) { printf("Zadany obdelnik je ctverec\n"); }
 
 	printf("Obvod: %d\n", obvod);
 	printf("Obsah: %d\n", obsah);
 
-
 	int kruznice(void); {
-
 
 		int r;
 		float obvod, obsah;
-
 
 		system("cls");
 
@@ -125,9 +118,7 @@ int obdelnik(void) {
 
 		obvod = 2 * 3.14 * r;
 
-
 		obsah = 3.14 * r * r;
-
 
 		printf("Obvod: %f\n", obvod);
 		printf("Obsah: %f\n", obsah);
