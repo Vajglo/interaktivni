@@ -25,17 +25,17 @@ int trojuhelnik(void) {
 
 	system("cls");
 
-	printf("Vlozet delku strany a v cm:\n");
+	printf("Zadej delku strany a v cm:\n");
 	scanf("%d", &a);
 
 	system("cls");
 
-	printf("Vlozet delku strany b v cm:\n");
+	printf("Zadej stranu b v cm:\n");
 	scanf("%d", &b);
 
 	system("cls");
 
-	printf("Vlozet delku strany c v cm:\n");
+	printf("Zadej delku strany c v cm:\n");
 	scanf("%d", &c);
 
 	system("cls");
@@ -65,7 +65,7 @@ int trojuhelnik(void) {
 
 
 	if (existuje != 1) {
-		printf("Trojuhelink neexistuje\n");
+		printf("Trojuhelink nelze sestrojit\n");
 	}
 	else {
 		if (pravouhly == 1) { printf("Trojuhelnik je pravouhly\n"); }
@@ -84,12 +84,12 @@ int obdelnik(void) {
 
 	system("cls");
 
-	printf("Vlozet delku strany a v cm:\n");
+	printf("Vloz delku strany a v cm:\n");
 	scanf("%d", &a);
 
 	system("cls");
 
-	printf("Vlozet delku strany b v cm:\n");
+	printf("Vyber rozmery strany b v cm:\n");
 	scanf("%d", &b);
 
 	system("cls");
@@ -118,7 +118,7 @@ int obdelnik(void) {
 
 		system("cls");
 
-		printf("Vlozet polomer kruznice v cm:\n");
+		printf("Zadej polomer kruznice v cm:\n");
 		scanf("%d", &r);
 
 		system("cls");
